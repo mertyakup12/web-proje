@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkımızda - EGE MAKİNA</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="hakkimizda.css">
+    <style>
+        .navbar-nav .nav-item .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        
+        .navbar-nav .nav-item .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: yellow;
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover {
+            color: yellow;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .logo {
+            height: 120px; /* Adjust the height as needed */
+        }
+        .navbar-custom {
+            background-color: #343a40; /* Navbar background color */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Navbar shadow */
+            padding: 10px 20px; /* Navbar padding */
+        }
+        .navbar-custom .navbar-brand img {
+            height: 30px; /* Adjust the logo size */
+            transition: transform 10s ease; /* Logo scale transition */
+        }
+        .navbar-custom .navbar-brand img:hover {
+            transform: scale(1.1); /* Logo scale on hover */
+        }
+        .navbar-custom .nav-link {
+            color: #ffffff !important; /* Navbar links color */
+            font-size: 18px; /* Navbar links font size */
+            margin-right: 15px; /* Navbar links spacing */
+            transition: color 0.3s ease; /* Navbar links color transition */
+        }
+        .navbar-custom .nav-link:hover {
+            color: #fefefe !important; /* Navbar links color on hover */
+        }
+    </style>
+</head>
+<body>
+    <header class="menu navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="EGE MAKİNA" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurumsalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kurumsal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="kurumsalDropdown">
+                            <a class="dropdown-item" href="hakkımızda.html">Hakkımızda</a>
+                            <a class="dropdown-item" href="vizyonumuz.html">Vizyonumuz</a>
+                            <a class="dropdown-item" href="misyonumuz.html">Misyonumuz</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Modeller
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="model_star_gh_230.html">STAR GH 230</a>
+                            <a class="dropdown-item" href="model_star_eh_230.html">STAR EH 230</a>
+                            <a class="dropdown-item" href="model_diyaframli.html">DİYAFRAMLI</a>
+                            <a class="dropdown-item" href="model_star_6900.html">STAR 6900</a>
+                            <a class="dropdown-item" href="model_star_7900.html">STAR 7900</a>
+                            <a class="dropdown-item" href="model_star_970.html">STAR 970</a>
+                            <a class="dropdown-item" href="model_star_495.html">STAR 495</a>
+                            <a class="dropdown-item" href="model_star_490.html">STAR 490</a>
+                            <a class="dropdown-item" href="model_star_395.html">STAR 395</a>
+                            <a class="dropdown-item" href="model_star_455.html">STAR 455</a>
+                            <a class="dropdown-item" href="model_star_68_1_hasco.html">STAR 68.1 HASCO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="yedekparça.html">Yedek Parça</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletişim.php">İletişim</a></li>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <div class="content mt-4 p-4 bg-dark text-white rounded">
+            <h1 class="text-center text-uppercase">Hakkımızda</h1>
+            <p>Mersin merkezli firmamız, airless boya makinelerinin satış, yedek parça temini ve servis hizmetlerinde öncü bir kuruluş olarak sektörde yer almaktadır. Kurulduğumuz günden bu yana müşteri memnuniyetini ve kaliteyi ön planda tutarak, boya makineleri konusunda uzmanlaşmış ekibimizle hizmet vermekteyiz. Mersin ve Adana bölgesinde güçlü bir servis ağı oluşturmuş olan firmamız, alanında uzman teknik ekibiyle hızlı ve güvenilir servis hizmeti vermektedir. Müşterilerimizin ihtiyaç duyduğu her an yanlarında olmak, arıza ve bakım işlemlerini en kısa sürede tamamlamak temel prensiplerimizdendir. Servis ağımız, makinelerinizin sorunsuz ve verimli bir şekilde çalışmasını sağlamak için düzenli bakım ve onarım hizmetleri sunar. Müşteri memnuniyeti odaklı çalışma prensibimizle, her zaman en kaliteli ürünleri ve hizmetleri sunmayı hedefliyoruz. İhtiyaçlarınıza en uygun çözümleri sunmak için her zaman yanınızdayız. Uzman ekibimiz, satın alma sürecinden servis hizmetlerine kadar tüm aşamalarda sizlere profesyonel destek sağlar.</p>
+
+            <p>Mersin’deki merkezimizde, siz değerli müşterilerimize en iyi hizmeti vermek için sürekli olarak çalışmaktayız. Airless boya makineleri ve yedek parçaları konusundaki her türlü ihtiyacınızı karşılamak için buradayız. Bizimle iletişime geçerek, ürünlerimiz ve hizmetlerimiz hakkında daha detaylı bilgi alabilir, ihtiyaçlarınıza en uygun çözümleri bulabilirsiniz.</p>
+
+            <p>Her zaman en iyisini sunma gayretiyle, siz değerli müşterilerimizi aramızda görmekten mutluluk duyarız.</p>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Hakkımızda</h5>
+                    <p>EGE MAKİNA, sektördeki lider firmalardan biri olarak, müşterilerine en kaliteli hizmeti sunmayı hedefler.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <h5>İletişim</h5>
+                    <p>Adres: Yeni, 33195. Sk. ALP PLAZA D:13/AB, 33200 Mezitli/Mersin</p>
+                    <p>Telefon: +90 0535 551 41 52</p>
+                    <p>Email: sahingeyik33@gmail.com</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p>&copy; 2024 EGE MAKİNA. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mersin'de faaliyet gösteren EGE MAKİNA, airless boya makineleri satışı ve tamiri, ayrıca geniş yelpazede boya ve hırdavat ürünleri sunmaktadır. Profesyonel hizmet ve kaliteli ürünler için doğru adres.">
+    <meta name="keywords" content="ege makina, airless boya pompası , airless boya makinası ,airless boya tabancası , havalı boya makinaları , airles boya makinası mersin mersin ege makina , boya makinası , boya makinası mersin, mersin boya makinası, mersin, havalı boya pompası , elektrikli boya pompası , benzinli boya pompası , elektrikli boya makinası , benzinli boya makinası , havalı boya makinası , airless yedek parça , yedek parça mersin , airless yedek parça , boya makinası yedek parça , airless boya makinası yedek parça , elektrikli boya pompası yedek parça , mersin boya makinası yedek parça , boya makinalır mersin , mersin boya pompaları, boya makinası teknik servis, boya makinası teknik servis mersin, boya makinası tamiri, airless boya pompası teknik servis mersin">
+    <title>EGE MAKİNA - Airless Boya Makinaları</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <style>
+       
+        .navbar-nav .nav-item .nav-link {
+            position: relative;
+            transition: color 0.3s;
+        }
+        
+        .navbar-nav .nav-item .nav-link::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background-color: hsl(60, 100%, 50%);
+            transform: scaleX(0);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover {
+            color: hsl(60, 100%, 50%)
+        }
+        
+        .navbar-nav .nav-item .nav-link:hover::after {
+            transform: scaleX(1);
+        }
+        
+        .card-img-top {
+            height: 250px;
+            object-fit: cover;
+        }
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+            margin-right: 10px;
+        }
+        .bg-custom {
+            background-color: #343a40;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; 
+            color: #fff; 
+        }
+        .logo {
+            width: 800px; /* Logo genişliği artırıldı */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Ortalar logoyu */
+        }
+        .navbar-custom {
+            background-color: #343a40; /* Navbar arkaplan rengi */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Hafif gölge efekti */
+            padding: 10px 20px; /* İç boşluk */
+        }
+        .navbar-custom .nav-link {
+            color: #ffffff !important; /* Menü yazı rengi */
+            font-size: 18px; /* Menü yazı boyutu */
+            margin-right: 15px; /* Menü öğeleri arası boşluk */
+            transition: color 0.3s ease; /* Geçiş efekti */
+        }
+        .navbar-custom .nav-link:hover {
+            color: #fefefe !important; /* Menü öğesi üzerine gelince değişen yazı rengi */
+        }
+        .navbar-custom .navbar-toggler {
+            border: none; /* Buton kenarlığı kaldır */
+        }
+        .navbar-custom .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba%28%255, 255, 255, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+        }
+        .card-text {
+            font-size: 1.2em;
+        }
+        
+            /* Büyük ekranlar için stil */
+            @media (min-width: 768px) {
+                .box {
+                    flex: 1 1 45%; /* Ekran genişlediğinde genişliği %45 yap */
+                }
+            }
+        
+            /* Çok küçük ekranlar için stil */
+            @media (max-width: 480px) {
+                .box {
+                    flex: 1 1 100%; /* Küçük ekranda tam genişlik */
+                }
+            }
+        .map-container {
+            border: 5px solid #000000;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .map-container iframe {
+            width: 100%;
+            height: 450px;
+            border: none;
+        }
+        .map-responsive {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+        }
+        .map-responsive iframe {
+            left: 0;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+        }
+        .large-text {
+            font-size: 40px; /* Boyutu istediğiniz gibi ayarlayabilirsiniz */
+        }
+    </style>
+</head>
+<body>
+    <header class="menu navbar navbar-expand-lg navbar-dark bg-dark">
+        <nav class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.jpg" alt="EGE MAKİNA" style="height: 100px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Ana Sayfa</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="kurumsalDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Kurumsal
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="kurumsalDropdown">
+                            <a class="dropdown-item" href="hakkımızda.html">Hakkımızda</a>
+                            <a class="dropdown-item" href="vizyonumuz.html">Vizyonumuz</a>
+                            <a class="dropdown-item" href="misyonumuz.html">Misyonumuz</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Modeller
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="model_star_gh_230.html">STAR GH 230</a>
+                            <a class="dropdown-item" href="model_star_eh_230.html">STAR EH 230</a>
+                            <a class="dropdown-item" href="model_diyaframli.html">DİYAFRAMLI</a>
+                            <a class="dropdown-item" href="model_star_6900.html">STAR 6900</a>
+                            <a class="dropdown-item" href="model_star_7900.html">STAR 7900</a>
+                            <a class="dropdown-item" href="model_star_970.html">STAR 970</a>
+                            <a class="dropdown-item" href="model_star_495.html">STAR 495</a>
+                            <a class="dropdown-item" href="model_star_490.html">STAR 490</a>
+                            <a class="dropdown-item" href="model_star_395.html">STAR 395</a>
+                            <a class="dropdown-item" href="model_star_455.html">STAR 455</a>
+                            <a class="dropdown-item" href="model_star_68_1_hasco.html">STAR 68.1 HASCO</a>
+                        </div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link" href="yedekparça.html">Yedek Parça</a></li>
+                    <li class="nav-item"><a class="nav-link" href="iletişim.php">İletişim</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="imageSlider" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#imageSlider" data-slide-to="0" class="active"></li>
+            <li data-target="#imageSlider" data-slide-to="1"></li>
+            <li data-target="#imageSlider" data-slide-to="2"></li>
+            <li data-target="#imageSlider" data-slide-to="3"></li>
+            <li data-target="#imageSlider" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="images/u1.jpg" class="d-block w-100" alt="Slide 1">
+            </div>
+            <div class="carousel-item">
+                <img src="images/u2.jpg" class="d-block w-100" alt="Slide 2">
+            </div>
+            <div class="carousel-item">
+                <img src="images/u3.jpg" class="d-block w-100" alt="Slide 4">
+            </div>
+        <a class="carousel-control-prev" href="#imageSlider" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Önceki</span>
+        </a>
+        <a class="carousel-control-next" href="#imageSlider" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Sonraki</span>
+        </a>
+    </div>
+
+    <img src="images/u7.jpg" alt="Fotoğraf Açıklaması" width="1670" height="400">
+
+    <div class="container mt-5">
+        <div class="text-center">
+            <div class="logo text-uppercase font-weight-bold text-primary mb-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb-4">
+                <div class="card bg-custom text-white">
+                    <img src="images/h2.jpg.jpeg" class="card-img-top" alt="Airless Boya Makinesi 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Star EH 230</h5>
+                        <p class="card-text">Yüksek performanslı ve dayanıklı airless boya makinesi.</p>
+                        <a href="model_star_eh_230.html" class="text-warning" style="font-size: 1.5rem; font-weight: bold;">STAR 970'İ KEŞFEDİN</a>
+                        <a href="https://wa.me/905355514152" class="btn btn-success d-flex align-items-center justify-content-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                            WhatsApp İle İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-custom text-white">
+                    <img src="images/h6.jpg.jpeg" class="card-img-top" alt="Airless Boya Makinesi 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Star 970 </h5>
+                        <p class="card-text">İşlerinizin kolaylığı için Star 970'i tercih edin.</p>
+                        <a href="model_star_970.html" class="text-warning" style="font-size: 1.5rem; font-weight: bold;">STAR 970'İ KEŞFEDİN</a>
+                        <a href="https://wa.me/905355514152" class="btn btn-success d-flex align-items-center justify-content-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                            WhatsApp İle İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card bg-custom text-white">
+                    <img src="images/h4.jpg.jpeg" class="card-img-top" alt="Airless Boya Makinesi 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Star 6900 Professionel serisi</h5>
+                        <p class="card-text"> Star 6900 ile işleriniz daha kolay ve çabuk bitsin.</p>
+                        <a href="model_star_6900.html" class="text-warning" style="font-size: 1.5rem; font-weight: bold;">STAR 6900'Ü KEŞFEDİN</a>
+                        <a href="https://wa.me/905355514152" class="btn btn-success d-flex align-items-center justify-content-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" class="whatsapp-icon">
+                            WhatsApp İle İletişime Geçin
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    <div class="row mt-5">
+                        <div class="col-12">
+                    <img src="images/konum.jpg" alt="Konum" class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="mt-5">
+            <h2 class="text-center">Bizim Konumumuz</h2>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1105.5893041828328!2d34.53798512673106!3d36.759145373835786!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x15278b6cf9ef6781%3A0x987f85edd9777923!2sEGE%20MAK%C4%B0NA!5e0!3m2!1str!2str!4v1720726602092!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Hakkımızda</h5>
+                    <p>EGE MAKİNA, sektördeki lider firmalardan biri olarak, müşterilerine en kaliteli hizmeti sunmayı hedefler.</p>
+                </div>
+                <div class="col-md-6 text-md-right">
+                    <h5>İletişim</h5>
+                    <p>Adres: Yeni, 33195. Sk. ALP PLAZA D:13/AB, 33200 Mezitli/Mersin</p>
+                    <p>Telefon: +90 0535 551 41 52</p>
+                    <p>Email: sahingeyik33@gmail.com</p>
+                </div>
+            </div>
+            <div class="row mt-3">
+                <div class="col text-center">
+                    <p>&copy; 2024 EGE MAKİNA. Tüm hakları saklıdır.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
